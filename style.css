@@ -17,6 +17,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #2e323f;
     width: 100%;
     margin: 0;
@@ -27,11 +28,31 @@ nav {
     background-color: transparent;
     border: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 20px; 
+    box-shadow: none; 
+    cursor: pointer;
 }
 
-.main-nav{
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+.toggle {
     display: none;
+}
+
+.main-nav li {
+    margin: 0 .25em 0 .25em;
+    font-size: 1rem;
+}
+
+.main-nav li:hover {
+    color:  #fff;
+    transition: 300ms;
 }
 
 header {
@@ -59,16 +80,29 @@ header p {
     background-color: #a59678;
     border-radius: 1.7em;
     margin: 1em 1em 1em 0;
+    
 }
 
 .sign-up {
     background-color: #a59678;
     border-radius: 1.7em;
-    color: #ffffff
+    color: #ffffff;
+    padding: .5em 1em;
 }
-button h3 {
+
+.sign-up:hover {
+    background-color: #fff;
+    transition: 300ms;
+    color:  #6F737F;
+}
+
+
+button h2 {
     color: white;
+    padding: 0 1em .25em 1em;
 }
+
+
 
 .cards {
     display: flex;
@@ -115,7 +149,7 @@ footer {
  
 footer p, li {
     font-size: .7rem;
-    color: #ffffff;
+    color: #6F737F;
 }
 
 footer h2 {
@@ -130,9 +164,9 @@ h1, h2, h3, h6 {
 }
 
 h2 {
-    
     font-size: 1.3rem;
 }
+
 .image {
     width: 250px;
     /* justify-content: center; */
@@ -186,6 +220,21 @@ ul {
         font-size: 1rem;
     }
 
+    .learn-button {
+        padding: 0 2em .25em 2em;
+    }
+
+    .learn-button:hover {
+        background-color: #fff;
+        transition: 300ms;
+        color:  #6F737F;
+    }
+
+    .learn-button h2:hover {
+        transition: 300ms;
+        color:  #6F737F;
+    }
+
     .cards {
         flex-direction: row;
         padding: 1em;
@@ -230,11 +279,15 @@ ul {
         font-size: .8rem;
     }
 
+    footer h2 {
+        font-size: 28px;
+    }
+
     footer h6 {
         font-size: 1.2rem;
     }
     footer p {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .footer-menu {
         display: flex;
@@ -243,7 +296,7 @@ ul {
     }
 
     .footer-menu li {
-        font-size: .8rem;
+        font-size: 1rem;
     }   
 }
 
@@ -298,6 +351,7 @@ ul {
     header h1 {
         font-size: 5rem;
         max-height: 700px;
+        line-height: 5rem;
     }
 
     .jumbo-right {
@@ -322,10 +376,27 @@ ul {
     }
 
     .logo {
-        margin-left: 3.2rem;
+        margin-left: 3.2em;
     }
 
     .main-nav {
-        margin-right: 2.5rem;
+        margin-right: 2.5em;
+    }
+
+ 
+    .about-us {
+     display: flex;
+     margin: 3em 4em 4em 4em;
+     align-items: center;
+    }
+
+    .footer-menu {
+       width: 60%;
+       padding-right: 0;
+    }
+
+    .about {
+       width: 40%;
+        
     }
 }
