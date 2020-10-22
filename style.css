@@ -28,7 +28,7 @@ nav {
     background-color: transparent;
     border: 0;
     color: #fff;
-    font-size: 20px; 
+    font-size: 18px; 
     box-shadow: none; 
     cursor: pointer;
 }
@@ -47,7 +47,7 @@ nav {
 
 .main-nav li {
     margin: 0 .25em 0 .25em;
-    font-size: 1rem;
+    font-size: .75rem;
 }
 
 .main-nav li:hover {
@@ -79,15 +79,24 @@ header p {
 .learn-button {
     background-color: #a59678;
     border-radius: 1.7em;
-    margin: 1em 1em 1em 0;
-    
+    margin: 1em 1em 1em 0; 
+}
+
+.learn-button:hover {
+    background-color: #fff;
+    transition: 300ms;
+}
+
+.learn-button h2:hover {
+    transition: 300ms;
+    color:  #6F737F;
 }
 
 .sign-up {
     background-color: #a59678;
-    border-radius: 1.7em;
+    border-radius: 1.5em;
     color: #ffffff;
-    padding: .5em 1em;
+    padding: .5em .65em;
 }
 
 .sign-up:hover {
@@ -224,16 +233,7 @@ ul {
         padding: 0 2em .25em 2em;
     }
 
-    .learn-button:hover {
-        background-color: #fff;
-        transition: 300ms;
-        color:  #6F737F;
-    }
 
-    .learn-button h2:hover {
-        transition: 300ms;
-        color:  #6F737F;
-    }
 
     .cards {
         flex-direction: row;
